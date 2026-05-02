@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Contractor Queen Creek & East Valley AZ | Quest Roofing</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section-transitions.css">
+    
+    <!-- GSAP -->
+     <!-- GSAP Observer (free) — required for section transitions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span class="top-bar-text"><span class="top-bar-dot" aria-hidden="true"></span>Monsoon Season Ready &mdash; Free Roof Inspections across the East Valley</span>
+            <a href="tel:6023996455" class="top-bar-phone">
+                <span class="top-bar-phone-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.91.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+                602-399-6455
+            </a>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16 L16 5 L28 16"></path><path d="M7 14 L7 27 L25 27 L25 14"></path></svg>
+                </span>
+                <span class="logo-text">Quest<span class="text-orange">Roofing</span></span>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#home" class="nav-link" data-nav-target="home"><span class="nav-link-num">01</span><span class="nav-link-text">Home</span></a>
+                <a href="#about" class="nav-link" data-nav-target="about"><span class="nav-link-num">02</span><span class="nav-link-text">About</span></a>
+                <a href="#services" class="nav-link" data-nav-target="services"><span class="nav-link-num">03</span><span class="nav-link-text">Services</span></a>
+                <a href="#resources" class="nav-link" data-nav-target="resources"><span class="nav-link-num">04</span><span class="nav-link-text">Resources</span></a>
+                <a href="#contact" class="btn-primary-nav">
+                    <span>Free Estimate</span>
+                    <span class="btn-primary-nav-arrow" aria-hidden="true">→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero dark-hero">
+            <!-- Video Background -->
+            <div class="hero-video-wrap">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="/hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
+            <div class="hero-glow"></div>
+            <div class="container hero-content">
+                <div class="hero-badge"><span class="hero-badge-dot"></span>East Valley Roofing Contractor</div>
+                <!-- Hero headings hierarchy -->
+                <p class="hero-eyeline hero-anim-line">Licensed · GAF-Certified · Queen Creek, AZ</p>
+                <h1 class="hero-title-main hero-anim-chars">Quest<span class="text-orange">Roofing</span></h1>
+                <h2 class="hero-title-sub hero-anim-words">Roof repairs, replacements &amp; inspections</h2>
+                <h3 class="hero-title-area hero-anim-line">across the <span class="text-orange">East Valley.</span></h3>
+                <p class="hero-description hero-anim-fade">Serving Gilbert, Chandler, Mesa, Tempe, and Apache Junction. Shingle, tile, metal, and foam — done right the first time.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Get My Free Estimate</a>
+                    <a href="tel:6023996455" class="btn-secondary-light">Call Now 602-399-6455</a>
+                </div>
+            </div>
+            <div class="mouse-scroll-indicator">
+                <div class="mouse-dot"></div>
+            </div>
+        </section>
+
+        <!-- TRUST BADGES — infinite credentials marquee -->
+        <section class="trust-badges">
+            <div class="trust-marquee" aria-label="Quest Roofing credentials">
+                <div class="trust-marquee-track">
+                    <span class="trust-pill">AZ ROC #355136</span><em>·</em>
+                    <span class="trust-pill">GAF Certified</span><em>·</em>
+                    <span class="trust-pill">Licensed &amp; Bonded</span><em>·</em>
+                    <span class="trust-pill">Workers' Comp Covered</span><em>·</em>
+                    <span class="trust-pill">5.0★ Google Reviews</span><em>·</em>
+                    <span class="trust-pill">Workmanship Warranty</span><em>·</em>
+                    <span class="trust-pill">10+ Years Local</span><em>·</em>
+                    <span class="trust-pill">Owens Corning Trained</span><em>·</em>
+                    <span class="trust-pill" aria-hidden="true">AZ ROC #355136</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">GAF Certified</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">Licensed &amp; Bonded</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">Workers' Comp Covered</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">5.0★ Google Reviews</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">Workmanship Warranty</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">10+ Years Local</span><em aria-hidden="true">·</em>
+                    <span class="trust-pill" aria-hidden="true">Owens Corning Trained</span><em aria-hidden="true">·</em>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY US (DECK OF CARDS PARALLAX) -->
+        <section id="about" class="why-us">
+            <div class="why-us-layout">
+                <div class="why-us-text">
+                    <div class="section-eyebrow">Why Choose Us</div>
+                    <h2 class="section-title">Built on honest work and <span class="text-orange">quality materials.</span></h2>
+                    <p>No shortcuts, no surprise costs, and no pressure. Just local roofing experts who know the Arizona desert.</p>
+                    <div class="why-us-stats">
+                        <div class="why-us-stat">
+                            <strong class="why-us-stat-num" data-count-to="500" data-count-suffix="+">0</strong>
+                            <span>Roofs<br>Completed</span>
+                        </div>
+                        <div class="why-us-stat">
+                            <strong class="why-us-stat-num" data-count-to="10" data-count-suffix="yr">0</strong>
+                            <span>In<br>Business</span>
+                        </div>
+                        <div class="why-us-stat">
+                            <strong class="why-us-stat-num" data-count-to="5" data-count-suffix=".0★">0</strong>
+                            <span>Google<br>Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-deck">
+                    <div class="feature-card fcard-1">
+                        <h3>Licensed & Bonded</h3>
+                        <p>AZ ROC #355136 — fully insured and workers' comp covered.</p>
+                    </div>
+                    <div class="feature-card fcard-2">
+                        <h3>GAF Certified</h3>
+                        <p>Factory-trained on GAF & Owens Corning systems.</p>
+                    </div>
+                    <div class="feature-card fcard-3">
+                        <h3>Local AZ Experts</h3>
+                        <p>Based in Queen Creek, serving the East Valley daily.</p>
+                    </div>
+                    <div class="feature-card fcard-4">
+                        <h3>Workmanship Warranty</h3>
+                        <p>Manufacturer warranties plus our own labor guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES — poster-list with giant numerals -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services-header">
+                    <div class="section-eyebrow">Services</div>
+                    <h2 class="services-headline">Roofing done <span class="text-orange">right.</span><br>The first time.</h2>
+                    <p class="services-lead">Whether it's a 20-year-old tile roof ready for new underlayment, a flat foam roof that needs recoating, or a brand new shingle install &mdash; we handle every residential roofing system common to the Arizona desert.</p>
+                </div>
+
+                <ul class="services-list">
+                    <li class="service-row">
+                        <span class="service-row-num">01</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Tile Roofing</h3>
+                            <p class="service-row-desc">Concrete and clay tile installation, repair, and underlayment replacement. Built for desert heat, monsoon rain, and 40+ year lifespans.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Get estimate for Tile Roofing">
+                            <span>Get estimate</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="service-row">
+                        <span class="service-row-num">02</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Shingle Roofing</h3>
+                            <p class="service-row-desc">Architectural asphalt shingle replacements and new installs using GAF and Owens Corning. Best value in Arizona.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Get estimate for Shingle Roofing">
+                            <span>Get estimate</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="service-row">
+                        <span class="service-row-num">03</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Foam Roofing</h3>
+                            <p class="service-row-desc">Spray polyurethane foam (SPF) roofing and recoats for flat roofs. Seamless, reflective, and highly energy-efficient.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Get estimate for Foam Roofing">
+                            <span>Get estimate</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="service-row">
+                        <span class="service-row-num">04</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Metal Roofing</h3>
+                            <p class="service-row-desc">Standing seam and exposed-fastener systems that reflect heat, shrug off monsoon winds, and last 40+ years.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Get estimate for Metal Roofing">
+                            <span>Get estimate</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="service-row">
+                        <span class="service-row-num">05</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Roof Repair</h3>
+                            <p class="service-row-desc">Leak detection, storm damage repair, flashing and tile replacement, and insurance claim assistance.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Get estimate for Roof Repair">
+                            <span>Get estimate</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="service-row">
+                        <span class="service-row-num">06</span>
+                        <div class="service-row-body">
+                            <h3 class="service-row-title">Free Inspection</h3>
+                            <p class="service-row-desc">Detailed inspection with photos, honest assessment, and a written estimate. We tell you what's actually wrong — no upselling.</p>
+                        </div>
+                        <a class="service-row-link" href="#contact" aria-label="Schedule a free roof inspection">
+                            <span>Schedule</span>
+                            <span class="service-row-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SERVICE AREAS -->
+        <section class="service-areas" id="service-areas">
+            <div class="service-areas-inner">
+                <div class="service-areas-text">
+                    <div class="section-eyebrow">Service Areas</div>
+                    <h3 class="sa-headline">Based in Queen Creek.<br><span class="sa-highlight">Serving the entire</span><br><span class="sa-highlight-strong">East Valley.</span></h3>
+                    <p class="sa-lead">Local matters in Arizona roofing. Monsoon patterns, HOA rules, and permit timelines vary by city &mdash; we know them all.</p>
+
+                    <!-- Oversized stat row — PayJustNow-style graphic anchors -->
+                    <div class="sa-stats">
+                        <div class="sa-stat">
+                            <strong class="sa-stat-num" data-count-to="7">0</strong>
+                            <span class="sa-stat-label">Cities<br>Served</span>
+                        </div>
+                        <div class="sa-stat">
+                            <strong class="sa-stat-num" data-count-to="500" data-count-suffix="+">0</strong>
+                            <span class="sa-stat-label">Roofs<br>Completed</span>
+                        </div>
+                        <div class="sa-stat">
+                            <strong class="sa-stat-num" data-count-to="10" data-count-suffix="yr">0</strong>
+                            <span class="sa-stat-label">Local<br>Experience</span>
+                        </div>
+                    </div>
+
+                    <ul class="sa-city-list">
+                        <li data-city="Queen Creek">Queen Creek</li>
+                        <li data-city="Gilbert">Gilbert</li>
+                        <li data-city="Chandler">Chandler</li>
+                        <li data-city="Mesa">Mesa</li>
+                        <li data-city="Tempe">Tempe</li>
+                        <li data-city="Apache Junction">Apache Junction</li>
+                        <li data-city="San Tan Valley">San Tan Valley</li>
+                    </ul>
+                    <a href="#contact" class="btn-sa">Get a Free Estimate</a>
+                </div>
+                <div class="service-areas-map-wrap">
+                    <div id="service-map"></div>
+                    <!-- Hint badge floating on the map -->
+                    <div class="sa-map-hint" aria-hidden="true">
+                        <span class="sa-map-hint-dot"></span>
+                        Click a pin to zoom in
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4-STEP PROCESS & ROOF BUILD ANIMATION -->
+        <section class="process-section">
+            <!-- Vertical city-name marquee anchor on the far left -->
+            <div class="process-marquee" aria-hidden="true">
+                <span>HOW&nbsp;WE&nbsp;WORK&nbsp;·&nbsp;HOW&nbsp;WE&nbsp;WORK&nbsp;·&nbsp;HOW&nbsp;WE&nbsp;WORK&nbsp;·&nbsp;HOW&nbsp;WE&nbsp;WORK&nbsp;·</span>
+            </div>
+
+            <div class="container">
+                <div class="process-layout">
+                    <div class="process-content">
+                        <div class="section-eyebrow">How We Work</div>
+                        <h2 class="process-heading">A <span class="text-orange">simple,</span><br>transparent process.</h2>
+
+                        <!-- Slot-machine stage: only one step is visible at a time -->
+                        <div class="active-step-stage">
+                            <div class="active-step is-current" data-step="01">
+                                <div class="active-step-num">01</div>
+                                <div class="active-step-body">
+                                    <h3 class="active-step-title">Inspection</h3>
+                                    <p class="active-step-desc">Free on-site assessment with photos. We document the actual condition of your roof and email a written estimate within 24 hours — no upsell, no pressure.</p>
+                                </div>
+                            </div>
+                            <div class="active-step" data-step="02">
+                                <div class="active-step-num">02</div>
+                                <div class="active-step-body">
+                                    <h3 class="active-step-title">Proposal</h3>
+                                    <p class="active-step-desc">Clear written quote covering materials, scope, timeline, and price. Financing available — $0 down options for qualified homeowners.</p>
+                                </div>
+                            </div>
+                            <div class="active-step" data-step="03">
+                                <div class="active-step-num">03</div>
+                                <div class="active-step-body">
+                                    <h3 class="active-step-title">Installation</h3>
+                                    <p class="active-step-desc">Trained crew, proper tear-off, manufacturer-spec installation. We handle every permit and the HOA paperwork — you don't lift a finger.</p>
+                                </div>
+                            </div>
+                            <div class="active-step" data-step="04">
+                                <div class="active-step-num">04</div>
+                                <div class="active-step-body">
+                                    <h3 class="active-step-title">Completion</h3>
+                                    <p class="active-step-desc">Final walkthrough, magnet sweep for nails, full cleanup, and warranty docs delivered. We're a phone call away if you ever need us again.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step rail at the bottom — labels brighten as their step takes the stage -->
+                        <ol class="step-rail">
+                            <li class="step-rail-item is-active" data-step="01">
+                                <span class="step-rail-num">01</span>
+                                <span class="step-rail-name">Inspection</span>
+                            </li>
+                            <li class="step-rail-item" data-step="02">
+                                <span class="step-rail-num">02</span>
+                                <span class="step-rail-name">Proposal</span>
+                            </li>
+                            <li class="step-rail-item" data-step="03">
+                                <span class="step-rail-num">03</span>
+                                <span class="step-rail-name">Installation</span>
+                            </li>
+                            <li class="step-rail-item" data-step="04">
+                                <span class="step-rail-num">04</span>
+                                <span class="step-rail-name">Completion</span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="process-visual">
+                        <svg id="roof-svg" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" aria-label="Roof build animation">
+                            <defs>
+                                <linearGradient id="roofBlue" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#5fa8ff" />
+                                    <stop offset="1" stop-color="#3088F4" />
+                                </linearGradient>
+                                <filter id="roofShadow" x="-20%" y="-20%" width="140%" height="150%">
+                                    <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#383F50" flood-opacity="0.16"/>
+                                </filter>
+                            </defs>
+                            <path class="roof-ghost" d="M30 130 L120 46 L210 130 Z M42 142 H198 M58 123 L120 66 L182 123" fill="none" stroke="#3088F4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="roof-deck" d="M30 130 L120 46 L210 130 Z" fill="#ffffff" stroke="#383F50" stroke-width="7" stroke-linejoin="round" filter="url(#roofShadow)" />
+                            <path id="roof-lines" d="M58 123 L120 66 L182 123 M80 123 L120 86 L160 123 M40 142 H200" fill="none" stroke="#383F50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                            <g id="roof-shingles">
+                                <path d="M50 130 H190" stroke="#b9d9ff" stroke-width="7" stroke-linecap="round" />
+                                <path d="M66 112 H174" stroke="#8fc3ff" stroke-width="7" stroke-linecap="round" />
+                                <path d="M83 95 H157" stroke="#5fa8ff" stroke-width="7" stroke-linecap="round" />
+                                <path d="M99 78 H141" stroke="#3088F4" stroke-width="7" stroke-linecap="round" />
+                            </g>
+                            <path id="ridge-cap" d="M23 132 L120 40 L217 132" fill="none" stroke="url(#roofBlue)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS: HORIZONTAL SCROLL -->
+        <section id="reviews" class="reviews-section">
+            <div class="container reviews-header">
+                <div class="reviews-header-grid">
+                    <div>
+                        <div class="section-eyebrow">Reviews</div>
+                        <h2 class="reviews-headline">What East Valley<br><span class="text-orange">homeowners</span> say.</h2>
+                    </div>
+                    <div class="reviews-rating">
+                        <strong class="reviews-rating-num" data-count-to="5" data-count-suffix=".0">0</strong>
+                        <span class="reviews-rating-stars" aria-hidden="true">★★★★★</span>
+                        <span class="reviews-rating-label">Verified Google Reviews</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-horizontal-wrapper">
+                <div class="reviews-track">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"I had a leak that caused serious issues in my living room ceiling. From inspection to final repair they were professional, efficient, and transparent about costs."</p>
+                        <span class="author">- Sarah R., Queen Creek</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Quest Roofing did an outstanding job installing a new roof on our home. They walked us through the process, helped us choose materials, and stuck to the timeline."</p>
+                        <span class="author">- Mike D., Gilbert</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Incredible service and very honest. They told me I just needed a repair when another company tried to sell me a whole new roof."</p>
+                        <span class="author">- John M., Chandler</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The crew was on time, communication was great, and they left the yard completely clean. Can’t ask for much more from a roofing contractor!"</p>
+                        <span class="author">- David T., Mesa</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ — horizontal scrolling flip cards -->
+        <section id="resources" class="faq-section">
+            <div class="container">
+                <div class="faq-header-row">
+                    <div>
+                        <div class="section-eyebrow">FAQ</div>
+                        <h2 class="faq-headline">Questions East Valley<br>homeowners <span class="text-orange">ask.</span></h2>
+                    </div>
+                    <p class="faq-hint">Click any card to flip it &mdash; scroll horizontally for more.</p>
+                </div>
+            </div>
+
+            <div class="faq-rail-wrap">
+                <div class="faq-rail">
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">01</span>
+                                <h3 class="faq-card-question">How much does a new roof cost in the East Valley?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">01</span>
+                                <p>Most East Valley roof replacements fall between $9,000 and $25,000 depending on square footage, material, and roof complexity. Foam roof recoats are typically less. We provide free, written estimates with no pressure.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">02</span>
+                                <h3 class="faq-card-question">How long does a roof last in Arizona's desert climate?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">02</span>
+                                <p>Shingle roofs last 18&ndash;25 years in Arizona. Tile roofs last 40&ndash;50+ years, though underlayment often needs replacement around year 20. Metal roofs last 40&ndash;60 years. Foam roofs last 15&ndash;20 years with timely recoats every 5&ndash;10 years.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">03</span>
+                                <h3 class="faq-card-question">Are you licensed and insured in Arizona?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">03</span>
+                                <p>Yes. Quest Roofing is fully licensed (AZ ROC #355136), bonded, and insured. We're also a GAF Certified Contractor.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">04</span>
+                                <h3 class="faq-card-question">Do you offer free roof inspections?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">04</span>
+                                <p>Yes &mdash; free roof inspections and written estimates across the East Valley including Queen Creek, Gilbert, Chandler, Mesa, Tempe, and Apache Junction. Call 602-399-6455 or use the form below to schedule.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">05</span>
+                                <h3 class="faq-card-question">How fast can you respond to a roof leak?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">05</span>
+                                <p>For active leaks, we typically respond same-day or next-day. Monsoon priority calls are handled first &mdash; if water is coming into your home, call us right away at 602-399-6455.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">06</span>
+                                <h3 class="faq-card-question">Do you offer financing?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">06</span>
+                                <p>Yes. Financing options for qualified homeowners &mdash; including $0 down and competitive rates. Ask about financing when you request your estimate.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="faq-card" type="button" aria-pressed="false">
+                        <div class="faq-card-inner">
+                            <div class="faq-card-face faq-card-front">
+                                <span class="faq-card-num">07</span>
+                                <h3 class="faq-card-question">Do you handle insurance claims?</h3>
+                                <span class="faq-card-flip-hint">Tap to read answer →</span>
+                            </div>
+                            <div class="faq-card-face faq-card-back">
+                                <span class="faq-card-num faq-card-num-back">07</span>
+                                <p>We provide documentation, photos, and assessments to support your insurance claim after a monsoon or hail event. We'll meet the adjuster on your roof to make sure nothing is missed.</p>
+                                <span class="faq-card-flip-hint">← Tap to flip back</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrap">
+                    <div class="contact-info-block">
+                        <div class="section-eyebrow">Free Estimate</div>
+                        <h2 class="contact-headline">Let's get your roof<br><span class="text-orange">sorted.</span></h2>
+                        <p class="contact-lead">Tell us a little about your project. We'll follow up within one business day to schedule your free inspection.</p>
+
+                        <ul class="contact-details">
+                            <li>
+                                <span class="contact-detail-label">Email</span>
+                                <a class="contact-detail-value" href="mailto:info@questroofing.com">info@questroofing.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-detail-label">Phone</span>
+                                <a class="contact-detail-value" href="tel:6023996455">602-399-6455</a>
+                            </li>
+                            <li>
+                                <span class="contact-detail-label">Office</span>
+                                <span class="contact-detail-value">24871 S SanTan Blvd 100-130, Queen Creek, AZ 85142</span>
+                            </li>
+                        </ul>
+
+                        <div class="contact-promise">
+                            <span class="contact-promise-num">24h</span>
+                            <span class="contact-promise-label">Response<br>guaranteed</span>
+                        </div>
+                    </div>
+                    <div class="contact-form-block">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="tel" placeholder="Phone" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-row">
+                                <select required>
+                                    <option value="" disabled selected>City</option>
+                                    <option>Queen Creek</option>
+                                    <option>Gilbert</option>
+                                    <option>Chandler</option>
+                                    <option>Mesa</option>
+                                    <option>Tempe</option>
+                                    <option>Apache Junction</option>
+                                    <option>San Tan Valley</option>
+                                    <option>Other East Valley</option>
+                                </select>
+                                <select required>
+                                    <option value="" disabled selected>Service Needed</option>
+                                    <option>Free Inspection</option>
+                                    <option>Roof Repair / Leak</option>
+                                    <option>Full Roof Replacement</option>
+                                    <option>Foam Recoat</option>
+                                    <option>Storm / Insurance Claim</option>
+                                    <option>Not Sure</option>
+                                </select>
+                            </div>
+                            <div class="form-row outline-none">
+                                <textarea placeholder="Tell us about your project" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">
+                                <span>Get My Free Estimate</span>
+                                <span class="contact-submit-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-mark" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16 L16 5 L28 16"></path><path d="M7 14 L7 27 L25 27 L25 14"></path></svg>
+                        </span>
+                        <span class="logo-text">Quest<span class="text-orange">Roofing</span></span>
+                    </a>
+                    <p>Licensed East Valley roofing contractor based in Queen Creek, AZ. Built on honest work, quality materials, and roofs that outlast the desert sun.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tile Roofing</a></li>
+                        <li><a href="#services">Shingle Roofing</a></li>
+                        <li><a href="#services">Metal Roofing</a></li>
+                        <li><a href="#services">Foam Roofing</a></li>
+                        <li><a href="#services">Roof Repairs</a></li>
+                        <li><a href="#contact">Financing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="#service-areas">Queen Creek</a></li>
+                        <li><a href="#service-areas">Gilbert</a></li>
+                        <li><a href="#service-areas">Chandler</a></li>
+                        <li><a href="#service-areas">Mesa</a></li>
+                        <li><a href="#service-areas">Tempe</a></li>
+                        <li><a href="#service-areas">Apache Junction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resources">FAQ</a></li>
+                        <li><a href="#contact">Privacy Policy</a></li>
+                        <li><a href="#contact">SMS Consent</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 Quest Roofing. On a quest to serve you better.</div>
+                <div class="footer-license">AZ ROC #355136 · Licensed · Bonded · Insured</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/nav-init.js"></script>
+    <script src="/script.js"></script>
+    <script src="/section-transitions.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script>
+    (function () {
+        /* ── Service Areas Leaflet Map ─────────────────────────────── */
+        var cities = [
+            { name: "Queen Creek",     lat: 33.2484, lng: -111.6341, hq: true  },
+            { name: "Gilbert",         lat: 33.3528, lng: -111.7890, hq: false },
+            { name: "Chandler",        lat: 33.3062, lng: -111.8413, hq: false },
+            { name: "Mesa",            lat: 33.4152, lng: -111.8315, hq: false },
+            { name: "Tempe",           lat: 33.4255, lng: -111.9400, hq: false },
+            { name: "Apache Junction", lat: 33.4150, lng: -111.5496, hq: false },
+            { name: "San Tan Valley",  lat: 33.1964, lng: -111.5357, hq: false },
+        ];
+
+        function initMap() {
+            var el = document.getElementById("service-map");
+            if (!el || el._leaflet_id) return;
+
+            var defaultCenter = [33.33, -111.78];
+            var defaultZoom = 10;
+
+            var map = L.map("service-map", {
+                center: defaultCenter,
+                zoom: defaultZoom,
+                zoomControl: false,
+                attributionControl: false,
+                scrollWheelZoom: false,
+                dragging: !L.Browser.mobile,
+                doubleClickZoom: true,
+                touchZoom: true,
+                tap: true
+            });
+
+            /* Custom zoom-out button — sits in the top-right of the map */
+            var ResetControl = L.Control.extend({
+                options: { position: "topright" },
+                onAdd: function () {
+                    var btn = L.DomUtil.create("button", "sa-map-reset");
+                    btn.type = "button";
+                    btn.setAttribute("aria-label", "Reset map view");
+                    btn.innerHTML = "Reset view";
+                    L.DomEvent.disableClickPropagation(btn);
+                    L.DomEvent.on(btn, "click", function () {
+                        map.flyTo(defaultCenter, defaultZoom, { duration: 1.1 });
+                    });
+                    return btn;
+                }
+            });
+            map.addControl(new ResetControl());
+
+            /* Dark tile layer — Stadia Alidade Smooth Dark */
+            L.tileLayer(
+                "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+                { maxZoom: 16 }
+            ).addTo(map);
+
+            /* Blue circle overlay covering the service area */
+            L.circle([33.32, -111.77], {
+                radius: 38000,
+                color: "#3088F4",
+                fillColor: "#3088F4",
+                fillOpacity: 0.08,
+                weight: 1.5,
+                opacity: 0.35
+            }).addTo(map);
+
+            /* Custom SVG pin factory */
+            function makeIcon(isHQ) {
+                var size   = isHQ ? 18 : 12;
+                var color  = isHQ ? "#3088F4" : "#5fa8ff";
+                var ring   = isHQ ? "#ffffff" : "rgba(255,255,255,0.55)";
+                var svg = [
+                    "<svg xmlns='http://www.w3.org/2000/svg' width='" + (size*2) + "' height='" + (size*2) + "' viewBox='0 0 " + (size*2) + " " + (size*2) + "'>",
+                    "<circle cx='" + size + "' cy='" + size + "' r='" + (size-2) + "' fill='" + color + "' opacity='1'/>",
+                    "<circle cx='" + size + "' cy='" + size + "' r='" + (size-2) + "' fill='none' stroke='" + ring + "' stroke-width='2'/>",
+                    "</svg>"
+                ].join("");
+                return L.divIcon({
+                    html: svg,
+                    className: "sa-map-pin" + (isHQ ? " sa-map-pin--hq" : ""),
+                    iconSize:   [size*2, size*2],
+                    iconAnchor: [size,   size],
+                    popupAnchor:[0, -(size+4)]
+                });
+            }
+
+            /* Drop markers with staggered entrance via CSS delay */
+            cities.forEach(function (city, i) {
+                var marker = L.marker([city.lat, city.lng], {
+                    icon: makeIcon(city.hq)
+                }).addTo(map);
+
+                /* Tooltip */
+                marker.bindTooltip(
+                    city.hq
+                        ? "<strong>Quest Roofing HQ</strong><br>" + city.name
+                        : city.name,
+                    { direction: "top", className: "sa-tooltip", permanent: false }
+                );
+
+                /* Click → smooth zoom into the city. Re-clicking the same
+                   city zooms back out so the map stays explorable. */
+                marker.on("click", function () {
+                    var currentZoom = map.getZoom();
+                    var targetZoom = city.hq ? 13 : 12;
+                    if (currentZoom >= targetZoom - 0.2) {
+                        map.flyTo(defaultCenter, defaultZoom, { duration: 1.1 });
+                    } else {
+                        map.flyTo([city.lat, city.lng], targetZoom, { duration: 1.2 });
+                    }
+                });
+
+                /* Stagger entrance: set initial opacity via the icon wrapper */
+                var iconEl = marker.getElement();
+                if (iconEl) {
+                    iconEl.style.opacity = "0";
+                    iconEl.style.transform += " scale(0)";
+                    iconEl.style.transition =
+                        "opacity 0.5s ease " + (0.2 + i * 0.12) + "s, " +
+                        "transform 0.5s cubic-bezier(0.34,1.56,0.64,1) " + (0.2 + i * 0.12) + "s";
+                    setTimeout(function() {
+                        iconEl.style.opacity = "1";
+                        iconEl.style.transform = iconEl.style.transform.replace("scale(0)", "scale(1)");
+                    }, 50);
+                }
+
+                /* Pulse ring animation for HQ pin via CSS class */
+                if (city.hq && marker.getElement()) {
+                    marker.getElement().classList.add("sa-pin-pulse");
+                }
+
+                /* Index by city name so the left-panel chips can zoom too */
+                city._marker = marker;
+            });
+
+            /* Wire the left-panel city chips to fly the map into that city */
+            var chipList = document.querySelectorAll(".sa-city-list li[data-city]");
+            chipList.forEach(function (chip) {
+                chip.addEventListener("click", function () {
+                    var name = chip.getAttribute("data-city");
+                    var city = cities.find(function (c) { return c.name === name; });
+                    if (!city) return;
+                    map.flyTo([city.lat, city.lng], city.hq ? 13 : 12, { duration: 1.2 });
+                    if (city._marker) city._marker.openTooltip();
+                });
+            });
+
+            /* Animate markers in when section enters viewport */
+            var section = document.getElementById("service-areas");
+            if (section && "IntersectionObserver" in window) {
+                var obs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e) {
+                        if (e.isIntersecting) {
+                            map.invalidateSize();
+                            obs.unobserve(section);
+                        }
+                    });
+                }, { threshold: 0.15 });
+                obs.observe(section);
+            }
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initMap);
+        } else {
+            initMap();
+        }
+    })();
+    </script>
+</body>
+</html>
