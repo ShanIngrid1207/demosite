@@ -75,6 +75,12 @@
       clipDiv.appendChild(contentDiv);
       section.appendChild(clipDiv);
 
+      // Pull elements with [data-no-reveal] back out as direct children of the
+      // section so they can use position:absolute relative to the section itself
+      // (the reveal-content's transform creates a containing block that breaks this).
+      const escapees = clipDiv.querySelectorAll("[data-no-reveal]");
+      escapees.forEach((el) => section.insertBefore(el, clipDiv));
+
       observer.observe(section);
     });
   }
