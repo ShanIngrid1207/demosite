@@ -1081,8 +1081,8 @@ p { line-height: 1.6; margin-top: 0; }
 
 /* PROCESS & ROOF SVG — full-bleed split with oversized step numerals */
 .process-section {
-    height: 100vh;
-    min-height: 760px;
+    min-height: 100vh;
+    padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(3rem, 6vw, 5rem);
     display: flex;
     align-items: center;
     background: var(--cream);
@@ -1110,9 +1110,9 @@ p { line-height: 1.6; margin-top: 0; }
 .process-marquee {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     width: 56px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1159,7 +1159,6 @@ p { line-height: 1.6; margin-top: 0; }
 /* LEFT: heading + active-step stage + step rail */
 .process-content {
     position: relative;
-    min-height: 64vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1168,12 +1167,12 @@ p { line-height: 1.6; margin-top: 0; }
 
 .process-heading {
     font-family: var(--display);
-    font-size: clamp(2.2rem, 5.6vw, 5.6rem);
+    font-size: clamp(1.6rem, 2.8vw, 2.6rem);
     font-weight: 900;
-    line-height: 1;
-    letter-spacing: -0.035em;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
     color: var(--navy);
-    margin: 0.5rem 0 1.6rem;
+    margin: 0 0 0.6rem;
 }
 
 /* Slot-machine stage — each step is absolutely stacked, only one shows */
