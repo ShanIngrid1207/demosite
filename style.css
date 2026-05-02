@@ -1037,9 +1037,9 @@ p { line-height: 1.6; margin-top: 0; }
     border-radius: 50%;
 }
 
-/* Dark Leaflet map chrome */
+/* Leaflet map chrome */
 .leaflet-container {
-    background: #1a1f2e !important;
+    background: var(--warm-gray) !important;
     font-family: var(--body) !important;
 }
 
