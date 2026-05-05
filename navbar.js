@@ -46,7 +46,6 @@
     <nav class="main-nav" aria-label="Primary">
       <div class="nav-dropdown">
         <a href="index.html#services" class="nav-link nav-has-dropdown" data-key="services">
-          <span class="nav-link-num">01</span>
           <span class="nav-link-text">Services</span>
           <svg class="nav-dropdown-caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4 L6 8 L10 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -62,7 +61,6 @@
 
       <div class="nav-dropdown">
         <a href="index.html#service-areas" class="nav-link nav-has-dropdown" data-key="service-areas">
-          <span class="nav-link-num">02</span>
           <span class="nav-link-text">Service Areas</span>
           <svg class="nav-dropdown-caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4 L6 8 L10 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -77,10 +75,10 @@
         </ul>
       </div>
 
-      <a href="index.html#process"   class="nav-link" data-key="process"><span class="nav-link-num">03</span><span class="nav-link-text">Process</span></a>
-      <a href="index.html#reviews"   class="nav-link" data-key="reviews"><span class="nav-link-num">04</span><span class="nav-link-text">Reviews</span></a>
-      <a href="index.html#resources" class="nav-link" data-key="faq"><span class="nav-link-num">05</span><span class="nav-link-text">FAQ</span></a>
-      <a href="blog.html"            class="nav-link" data-key="blog"><span class="nav-link-num">06</span><span class="nav-link-text">Blog</span></a>
+      <a href="index.html#process"   class="nav-link" data-key="process"><span class="nav-link-text">Process</span></a>
+      <a href="index.html#reviews"   class="nav-link" data-key="reviews"><span class="nav-link-text">Reviews</span></a>
+      <a href="index.html#resources" class="nav-link" data-key="faq"><span class="nav-link-text">FAQ</span></a>
+      <a href="blog.html"            class="nav-link" data-key="blog"><span class="nav-link-text">Blog</span></a>
       <a href="#estimate" class="btn-primary-nav">
         <span>Free Estimate</span>
         <span class="btn-primary-nav-arrow" aria-hidden="true">→</span>
