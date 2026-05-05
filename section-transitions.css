@@ -1,0 +1,106 @@
+/* ============================================================
+   section-transitions.css
+   1. Hero liquid glass panel (hero only, nothing else)
+   2. Section entrance clip-reveal helpers
+   ============================================================ */
+
+/* ─── HERO LIQUID GLASS ──────────────────────────────────────────────────── */
+
+.hero-glass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.8rem 3.2rem 3rem;
+  border-radius: 24px;
+  /* Full width — no max-width cap */
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-top-color: rgba(255, 255, 255, 0.26);
+
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.1) inset,
+    0 40px 80px rgba(0, 0, 0, 0.32),
+    0 8px 24px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+}
+
+/* Top-left shimmer streak */
+.hero-glass::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 55%; height: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.11) 0%,
+    rgba(255, 255, 255, 0.0) 60%
+  );
+  border-radius: 24px 0 0 0;
+  pointer-events: none;
+}
+
+/* Blue accent glow at bottom-right */
+.hero-glass::after {
+  content: '';
+  position: absolute;
+  bottom: -24px; right: -24px;
+  width: 260px; height: 160px;
+  background: radial-gradient(ellipse, rgba(48, 136, 244, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+/* ─── SECTION ENTRANCE ───────────────────────────────────────────────────── */
+
+/*
+  Each section gets .section-reveal added by JS.
+  The clip goes from bottom-up, inner content counter-moves.
+  Once .is-visible is added, the animation plays.
+*/
+
+.section-reveal {
+  --reveal-duration: 1s;
+  --reveal-ease: cubic-bezier(0.16, 1, 0.3, 1); /* expo out */
+}
+
+.section-reveal .reveal-clip {
+  overflow: hidden;
+}
+
+.section-reveal .reveal-clip .reveal-content {
+  transform: translateY(60px);
+  opacity: 0;
+  transition:
+    transform var(--reveal-duration) var(--reveal-ease),
+    opacity calc(var(--reveal-duration) * 0.8) ease;
+  will-change: transform, opacity;
+}
+
+.section-reveal.is-visible .reveal-clip .reveal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Stagger child items inside a revealed section */
+.section-reveal.is-visible .reveal-stagger > * {
+  animation: staggerFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.section-reveal.is-visible .reveal-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.section-reveal.is-visible .reveal-stagger > *:nth-child(2) { animation-delay: 0.13s; }
+.section-reveal.is-visible .reveal-stagger > *:nth-child(3) { animation-delay: 0.21s; }
+.section-reveal.is-visible .reveal-stagger > *:nth-child(4) { animation-delay: 0.29s; }
+.section-reveal.is-visible .reveal-stagger > *:nth-child(5) { animation-delay: 0.37s; }
+.section-reveal.is-visible .reveal-stagger > *:nth-child(6) { animation-delay: 0.44s; }
+
+@keyframes staggerFadeUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
